@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="configure.h" />
+    <ClInclude Include="protocol.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="g00_imitator.cpp" />
@@ -125,6 +126,7 @@
     <ClCompile Include="g00_tricker.cpp" />
     <ClCompile Include="gXX_XXXX.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="credit.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

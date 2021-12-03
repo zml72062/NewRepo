@@ -18,6 +18,9 @@
     <ClInclude Include="configure.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="protocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="g00_imitator.cpp">
@@ -39,6 +42,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="credit.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
