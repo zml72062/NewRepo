@@ -1,9 +1,12 @@
 #pragma once
+#ifndef PROTOCOL_H
+#define PROTOCOL_H
 
-#define LAUNCHER 0.8
-#define RECEIVER 0.4
-#define BETRAYER 0.1
-#define DECAY 0.1
+
+#define LAUNCHER 0.5
+#define RECEIVER 0.2
+#define BETRAYER 0.7
+#define DECAY 0.95
 
 //  --------------------------------
 //  |  LAUNCHER  |     ·¢Æð½±Àø     |
@@ -13,9 +16,9 @@
 //  --------------------------------
 
 
-enum protocol_code { _100, _101, _302 } protocol_code;
+enum protocol_code { _100, _101, _302 };
 
-inline void credit(const char* my_decisions,
+void credit(const char* my_decisions,
 	const char* opp_decisions,
 	int len,
 	double* my_credit,
@@ -24,4 +27,6 @@ inline void credit(const char* my_decisions,
 	double* opp_reward,
 	double* my_punishment,
 	double* opp_punishment,
-	enum protocol_code protocol_code);
+	enum protocol_code* protocol_code);
+
+#endif
